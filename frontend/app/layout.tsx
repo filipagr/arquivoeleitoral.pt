@@ -8,9 +8,18 @@ import "./globals.css";
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Arquivo Eleitoral — O que prometeram. Onde está a prova.",
+  title: "Arquivo Eleitoral",
   description:
     "Pesquisa e compara promessas eleitorais de partidos políticos portugueses desde 2002, com fonte primária arquivada no Arquivo.pt.",
+  openGraph: {
+    siteName: "Arquivo Eleitoral",
+    title: "Arquivo Eleitoral",
+    description:
+      "Pesquisa e compara promessas eleitorais de partidos políticos portugueses desde 2002, com fonte primária arquivada no Arquivo.pt.",
+    url: "https://arquivoeleitoral.pt",
+    locale: "pt_PT",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
